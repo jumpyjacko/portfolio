@@ -10,3 +10,28 @@
 * {
     transition: color 0.15s, background-color 0.15s;
 }
+
+.slide-in, .slide-out {
+    animation-duration: 250ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-in {
+    animation-name: slide-in;
+}
+
+.slide-out {
+    animation-name: slide-out;
+}
+
+@keyframes slide-in {
+    from { transform: translateX(-100px) }
+    to { transform: translateX(0) }
+}
+
+@keyframes slide-out {
+    from { transform: translateX(0) }
+    to { transform: translateX(-100px) }
+}
+
