@@ -23,14 +23,26 @@
         birdImg.style.transform = "rotateX(0) rotateY(0) scale(1)";
     }
 
+    function press(e: MouseEvent) {
+        birdImg.style.transform = "scale(1)";
+    }
+
+    function release(e: MouseEvent) {
+        birdImg.style.transform = "scale(1.1)";
+    }
+
     onMount(() => {
         mainBird.addEventListener("mousemove", tilt);
         mainBird.addEventListener("mouseleave", reset);
+        mainBird.addEventListener("mousedown", press);
+        mainBird.addEventListener("mouseup", release);
     });
 
     onDestroy(() => {
         mainBird.removeEventListener("mousemove", tilt);
         mainBird.removeEventListener("mouseleave", reset);
+        mainBird.removeEventListener("mousedown", press);
+        mainBird.removeEventListener("mouseup", release);
     });
 </script>
 
