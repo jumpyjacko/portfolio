@@ -60,14 +60,14 @@
 <button
     bind:this={sunButton}
     onclick={toggleTheme}
-    class="absolute"
+    class="absolute m-5"
 >
     <img src="/icons/sun.svg" width="64" alt="Sun"/>
 </button>
 <button
     bind:this={moonButton}
     onclick={toggleTheme}
-    class="absolute"
+    class="absolute m-5"
 >
     <img src="/icons/moon.svg" width="64" alt="Moon" />
 </button>
