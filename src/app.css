@@ -13,7 +13,7 @@
 
 .slide-in, .slide-out {
     animation-duration: 250ms;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
