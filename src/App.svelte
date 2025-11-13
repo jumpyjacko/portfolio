@@ -1,6 +1,5 @@
 <script lang="ts">
     import ThemeToggle from "./lib/components/ThemeToggle.svelte";
-    import { theme } from "./lib/state/theme.svelte";
 </script>
 
 <ThemeToggle />
