@@ -27,7 +27,7 @@
 
 @keyframes roll-in {
     from {
-        transform: translateX(-100px) rotate(-0.5turn);
+        transform: translateX(-80px) rotate(-0.25turn);
     }
     to {
         transform: translateX(0) rotate(0turn);
@@ -39,7 +39,7 @@
         transform: translateX(0) rotate(0turn);
     }
     to {
-        transform: translateX(-100px) rotate(-0.5turn);
+        transform: translateX(-80px) rotate(-0.25turn);
     }
 }
 
