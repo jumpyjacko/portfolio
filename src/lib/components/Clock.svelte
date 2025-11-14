@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onDestroy, onMount } from "svelte";
+    import ThemeToggle from "./ThemeToggle.svelte";
 
     let marker: HTMLDivElement;
 
@@ -10,7 +11,7 @@
     let angle = $derived.by(() => {
         let a = totalMinutes;
         if (totalMinutes >= 720) a -= 720;
-        return mapRange(a, 0, 720, -75, 75); // NOTE: consider radians
+        return mapRange(a, 0, 720, -85, 85); // NOTE: consider radians
     });
 
     let interval: any;
@@ -43,7 +44,7 @@
     }
 
     function updateMarker() {
-        marker.style.transform = `translateY(-15vh) rotate(${angle}deg)`;
+        marker.style.transform = `rotate(${angle}deg)`;
     }
 
     onMount(() => {
@@ -56,10 +57,12 @@
             );
         }
 
+        [timeHours, timeMinutes] = getTime(hasTemporal);
+        updateMarker();
         interval = setInterval(() => {
             [timeHours, timeMinutes] = getTime(hasTemporal);
             updateMarker();
-        }, 1000);
+        }, 10000);
     });
 
     onDestroy(() => {
@@ -67,13 +70,16 @@
     });
 </script>
 
-<div bind:this={marker} class="clock">hi</div>
+<div bind:this={marker} class="clock -top-1">
+    <ThemeToggle />
+</div>
+
 
 <style>
-.clock {
-    position: absolute;
-    transform-origin: 50% 35vh;
-    transform: translateY(-15vh) rotate(-90deg);
-    transition: transform 1s ease-in-out;
-}
+    .clock {
+        position: absolute;
+        transform-origin: center 35vw;
+        transform: rotate(-90deg);
+        transition: transform 1s ease-in-out;
+    }
 </style>
