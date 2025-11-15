@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.0557 3.59974C12.2752 3.2813 12.2913 2.86484 12.0972 2.53033C11.9031 2.19582 11.5335 2.00324 11.1481 2.03579C6.02351 2.46868 2 6.76392 2 12C2 17.5228 6.47715 22 12 22C17.236 22 21.5313 17.9764 21.9642 12.8518C21.9967 12.4664 21.8041 12.0968 21.4696 11.9027C21.1351 11.7086 20.7187 11.7248 20.4002 11.9443C19.4341 12.6102 18.2641 13 17 13C13.6863 13 11 10.3137 11 6.99996C11 5.73589 11.3898 4.56587 12.0557 3.59974Z" fill="#FFF1DF"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="moon.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4575"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="2540"
+     inkscape:window-height="1420"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 12.071824,3.5836258 c 0.2195,-0.31844 0.2356,-0.7349 0.0415,-1.06941 -0.1941,-0.33451 -0.5637,-0.52709 -0.9491,-0.49454 -5.1245893,0.43289 -9.1480993,4.72813 -9.1480993,9.9642102 0,5.5228 4.47715,10 9.9999993,10 5.236,0 9.5313,-4.0236 9.9642,-9.1482 0.0325,-0.3854 -0.1601,-0.755 -0.4946,-0.9491 -0.3345,-0.1941 -0.7509,-0.1779 -1.0694,0.0416 -0.9661,0.6659 -2.1361,1.0557 -3.4002,1.0557 -3.3137,0 -6,-2.6863 -6,-6.0000402 0,-1.26407 0.3898,-2.43409 1.0557,-3.40022 z"
+     fill="#fff1df"
+     id="path1" />
 </svg>
