@@ -69,7 +69,8 @@
         interval = setInterval(() => {
             [timeHours, timeMinutes] = getTime(hasTemporal);
             updateMarker();
-        }, 10000);
+            totalMinutes += 20;
+        }, 1000);
     });
 
     onDestroy(() => {
@@ -77,50 +78,54 @@
     });
 </script>
 
-<div class="absolute top-0">
+<div class="absolute top-1">
     <svg
-        class="absolute z-[-1] w-auto h-[70vw] -translate-x-1/2 -translate-y-1/2"
-        viewBox="-0 0 100 100"
+        class="absolute z-[-1] w-xs md:w-3xl lg:w-4xl h-auto -translate-x-1/2"
+        viewBox="0 0 100 100"
     >
         <circle
             cx="50"
-            cy="100"
-            r="46"
+            cy="50"
+            r="45"
             fill="transparent"
             stroke={textColour}
-            stroke-width="0.5"
-            stroke-dasharray="1,10,1"
+            stroke-width="5"
+            stroke-dasharray="10 100 10"
+            vector-effect="non-scaling-stroke"
         >
             <animateTransform
                 attributeName="transform"
                 begin="0s"
                 dur="60s"
                 type="rotate"
-                from="0 50 100"
-                to="360 50 100"
+                from="0 50 50"
+                to="360 50 50"
                 repeatCount="indefinite"
             />
         </circle>
-        <!-- <circle cx="50" cy="100.5" r="1" fill="magenta" /> -->
+        <!-- <circle cx="50" cy="50" r="0.1" fill="magenta" /> -->
     </svg>
-    <div bind:this={marker} class="clock">
+    <div bind:this={marker} class="clock origin-[center_10rem] md:origin-[center_24rem] lg:origin-[center_28rem]">
         <ThemeToggle />
-        <!-- <div -->
-        <!--     class="absolute h-100 bg-blue-500 rounded-full clock-arm" -->
-        <!-- ></div> -->
+        <!-- <div class="bg-blue-500 rounded-full clock-arm"></div> -->
     </div>
-    <!-- <div -->
-    <!--     class="absolute w-2 h-2 bg-red-500 rounded-full" -->
-    <!--     style="top: 35vw; left: 50%; transform: translate(-50%, -50%);" -->
-    <!-- ></div> -->
 </div>
 
 <style>
     .clock {
         position: absolute;
         width: max-content;
-        transform-origin: center 35vw;
         transform: translateX(-32px) rotate(-90deg);
         transition: transform 1s ease-in-out;
     }
 </style>
+    <!-- .clock-arm { -->
+    <!--     position: absolute; -->
+    <!--     top: 50%; -->
+    <!--     left: 50%; -->
+    <!--     width: 2px; -->
+    <!--     height: 500px; -->
+    <!---->
+    <!--     transform-origin: bottom center; -->
+    <!--     transform: translate(-50%, 0); -->
+    <!-- } -->

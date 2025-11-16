@@ -54,13 +54,25 @@
 </script>
 
 <button bind:this={sunButton} onclick={toggleTheme}>
-    <img src="/icons/sun.svg" alt="Sun" class="hover-expand w-[5vw]" />
+    <img src="/icons/sun.svg" alt="Sun" class="hover-expand w-16" />
 </button>
 <button bind:this={moonButton} onclick={toggleTheme}>
-    <img src="/icons/moon.svg" width="64" alt="Moon" class="hover-expand w-[5vw]" />
+    <img src="/icons/moon.svg" alt="Moon" class="hover-expand w-16" />
 </button>
 
 <style>
-    .hover-expand { transition: all 0.5s; transform: rotate(45deg); }
-    .hover-expand:hover { scale: 110%; }
+    .hover-expand {
+        transition: all 0.5s;
+        transform: translateY(-20%) rotate(45deg);
+
+        @media (width >= 48rem) {
+            transform: translateY(10%) rotate(45deg);
+        }
+        @media (width >= 64rem) {
+            transform: translateY(20%) rotate(45deg);
+        }
+    }
+    .hover-expand:hover {
+        scale: 110%;
+    }
 </style>
