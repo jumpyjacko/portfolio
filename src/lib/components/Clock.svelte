@@ -99,7 +99,8 @@
                 transform="rotate({angle} 50 50)"
                 style="transition: transform 1s ease-in-out"
             />
-            <circle cx="50" cy="85" r="50" fill="black" />
+            <circle cx="50" cy="100" r="60" fill="black" />
+            <rect x="20" y="30" width="60" height="20" fill="white" />
         </mask>
         <g mask="url(#orbitMask)">
             <circle
@@ -116,6 +117,27 @@
                     attributeName="transform"
                     begin="0s"
                     dur="60s"
+                    type="rotate"
+                    from="0 50 50"
+                    to="360 50 50"
+                    repeatCount="indefinite"
+                />
+            </circle>
+
+            <circle
+                cx="50"
+                cy="50"
+                r="25"
+                fill="transparent"
+                stroke={textColour}
+                stroke-width="3"
+                stroke-dasharray="20 80 50"
+                vector-effect="non-scaling-stroke"
+            >
+                <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="102s"
                     type="rotate"
                     from="0 50 50"
                     to="360 50 50"
