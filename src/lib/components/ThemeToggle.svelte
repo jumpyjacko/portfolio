@@ -24,6 +24,8 @@
         if (!theme.isDark) {
             moonButton.addEventListener("animationend", listener);
             moonButton.classList.add("roll-out");
+            moonButton.classList.add("pointer-events-none");
+            sunButton.classList.add("pointer-events-none");
 
             function listener(event: AnimationEvent) {
                 if (event.type === "animationend") {
@@ -31,6 +33,8 @@
                     moonButton.classList.remove("roll-out");
                     sunButton.classList.remove("hidden");
                     sunButton.classList.add("roll-in");
+                    moonButton.classList.remove("pointer-events-none");
+                    sunButton.classList.remove("pointer-events-none");
                 }
 
                 moonButton.removeEventListener("animationend", listener);
@@ -38,6 +42,8 @@
         } else {
             sunButton.addEventListener("animationend", listener);
             sunButton.classList.add("roll-out");
+            sunButton.classList.add("pointer-events-none");
+            moonButton.classList.add("pointer-events-none");
 
             function listener(event: AnimationEvent) {
                 if (event.type === "animationend") {
@@ -45,6 +51,8 @@
                     sunButton.classList.remove("roll-out");
                     moonButton.classList.remove("hidden");
                     moonButton.classList.add("roll-in");
+                    moonButton.classList.remove("pointer-events-none");
+                    sunButton.classList.remove("pointer-events-none");
                 }
 
                 sunButton.removeEventListener("animationend", listener);
