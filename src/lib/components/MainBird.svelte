@@ -61,7 +61,7 @@
     })
 </script>
 
-<div bind:this={mainBird} class="main-bird mt-50">
+<div bind:this={mainBird} class="main-bird mt-50 select-none">
     <img
         bind:this={birdImg}
         src="/images/birb-bg-no-bg.svg"

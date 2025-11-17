@@ -62,10 +62,10 @@
 </script>
 
 <button bind:this={sunButton} onclick={toggleTheme}>
-    <img src="/icons/sun.svg" alt="Sun" class="hover-expand w-16" />
+    <img src="/icons/sun.svg" alt="Sun" class="hover-expand w-16 select-none" />
 </button>
 <button bind:this={moonButton} onclick={toggleTheme}>
-    <img src="/icons/moon.svg" alt="Moon" class="hover-expand w-16" />
+    <img src="/icons/moon.svg" alt="Moon" class="hover-expand w-16 select-none" />
 </button>
 
 <style>
