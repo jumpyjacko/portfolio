@@ -70,15 +70,15 @@
     });
 </script>
 
-<div class="absolute top-1">
+<div class="absolute top-8 md:top-1">
     <div
         bind:this={marker}
-        class="clock origin-[center_10rem] md:origin-[center_24rem] lg:origin-[center_28rem]"
+        class="clock origin-[center_8rem] md:origin-[center_24rem] lg:origin-[center_28rem]"
     >
         <ThemeToggle />
     </div>
     <svg
-        class="absolute z-[-1] w-xs md:w-3xl lg:w-4xl h-auto -translate-x-1/2 orbit-cutout"
+        class="absolute z-[-1] w-3xs md:w-3xl lg:w-4xl h-auto -translate-x-1/2 orbit-cutout"
         viewBox="0 0 100 100"
     >
         <mask id="orbitMask" mask-type="luminance">

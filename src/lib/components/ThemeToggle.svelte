@@ -71,7 +71,7 @@
 <style>
     .theme-button {
         transition: all 0.5s;
-        transform: translateY(-20%) rotate(45deg);
+        transform: translateY(-25%) rotate(45deg);
 
         @media (width >= 48rem) {
             transform: translateY(10%) rotate(45deg);
