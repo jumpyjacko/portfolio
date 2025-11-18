@@ -7,11 +7,12 @@
     <title>jumpyjacko | Home</title>
 
     <script>
-      document.documentElement.classList.toggle(
-          "dark",
-          localStorage.theme === "dark" ||
-          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-      );
+        if (
+            !("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)")
+        ) {
+            localStorage.theme = "dark";
+        }
     </script>
   </head>
   <body class="bg-cream text-midnight dark:bg-midnight dark:text-cream">
