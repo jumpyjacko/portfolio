@@ -34,6 +34,10 @@
 
     <div class="h-8"></div>
     <SocialsRow />
+
+    <p class="mt-100 mb-10">
+        theres no content here yet...
+    </p>
 </main>
 <footer class="w-full flex flex-row justify-end fixed bottom-0 p-1">
     <a href="https://github.com/jumpyjacko/portfolio" target="_blank" class="underline">
