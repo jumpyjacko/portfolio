@@ -30,7 +30,7 @@
 
     <p class="mt-100 mb-10">theres no content here yet...</p>
 </main>
-<footer class="w-full flex flex-row justify-end fixed bottom-0 p-1">
+<footer class="hidden w-full md:flex flex-row justify-end fixed bottom-0 p-1">
     <a
         href="https://github.com/jumpyjacko/jumpyjacko.github.io"
         target="_blank"
@@ -43,7 +43,7 @@
     <svg
         bind:this={scrollIndicator}
         width="60"
-        height="60"
+        height="35"
         class="animate-bounce"
     >
         <path
