@@ -102,19 +102,39 @@
 
         @keyframes roll-in {
             from {
-                transform: translateX(-40px) rotate(-0.25turn);
+                transform: translate(-5px, -5px) rotate(-0.25turn);
             }
             to {
-                transform: translateX(0) rotate(0turn);
+                transform: translate(0, 0) rotate(0turn);
             }
         }
 
         @keyframes roll-out {
             from {
-                transform: translateX(0) rotate(0turn);
+                transform: translate(0, 0) rotate(0turn);
             }
             to {
-                transform: translateX(-40px) rotate(-0.25turn);
+                transform: translate(-5px, -5px) rotate(-0.25turn);
+            }
+        }
+
+        @media (width >= 48rem) {
+            @keyframes roll-in {
+                from {
+                    transform: translateX(-40px) rotate(-0.25turn);
+                }
+                to {
+                    transform: translateX(0) rotate(0turn);
+                }
+            }
+
+            @keyframes roll-out {
+                from {
+                    transform: translateX(0) rotate(0turn);
+                }
+                to {
+                    transform: translateX(-40px) rotate(-0.25turn);
+                }
             }
         }
     }
