@@ -16,6 +16,11 @@
 
     let interval: any;
 
+    let iWidth = $state(window.innerWidth);
+    function updateWidth() {
+        iWidth = window.innerWidth;
+    }
+
     function mapRange(
         x: number,
         inMin: number,
@@ -48,6 +53,7 @@
     }
 
     onMount(() => {
+        // timer
         let hasTemporal: boolean = false;
         try {
             hasTemporal = Temporal.Now.instant() !== undefined;
@@ -63,10 +69,14 @@
             [timeHours, timeMinutes] = getTime(hasTemporal);
             updateMarker();
         }, 10000);
+
+        // HACK: reactive window breakpoints for js
+        window.addEventListener("resize", updateWidth);
     });
 
     onDestroy(() => {
         clearInterval(interval);
+        window.removeEventListener("resize", updateWidth);
     });
 </script>
 
@@ -84,9 +94,9 @@
         <mask id="orbitMask" mask-type="luminance">
             <rect x="0" y="0" width="100" height="100" fill="white" />
             <rect
-                x="45"
+                x={iWidth >= 768 ? "45" : "35"}
                 y="0"
-                width="10"
+                width={iWidth >= 768 ? "10" : "30"}
                 height="50"
                 fill="black"
                 transform="rotate({angle} 50 50)"
