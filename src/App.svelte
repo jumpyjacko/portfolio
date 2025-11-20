@@ -30,7 +30,7 @@
 
     <p class="mt-100 mb-10">theres no content here yet...</p>
 </main>
-<footer class="hidden md:flex flex-row justify-end fixed bottom-0 right-0 p-1">
+<footer class="hidden md:flex flex-row justify-end fixed bottom-0 right-0 p-1 z-1">
     <a
         href="https://github.com/jumpyjacko/jumpyjacko.github.io"
         target="_blank"
